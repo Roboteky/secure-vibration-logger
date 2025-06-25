@@ -19,7 +19,7 @@ else:
 fernet = Fernet(key)
 
 # Adjust COM port if needed
-ser = serial.Serial('COM4', 9600, timeout=1)
+ser = serial.Serial('COM7', 9600, timeout=1)
 time.sleep(2)
 
 with open("data/data.enc", "ab") as log_file:
